@@ -3,19 +3,39 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-
     defaultConfig {
         applicationId "cn.sopho.destiny.gasstation"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
+    signingConfigs {
         release {
+            storeFile file("../../destiny.jks")
+            storePassword "123456"
+            keyAlias "destinyandroidkey"
+            keyPassword "123456"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -33,4 +53,6 @@ dependencies {
     compile 'com.joanzapata.iconify:android-iconify:2.1.1'
     compile 'com.joanzapata.iconify:android-iconify-material-community:2.1.1'
     compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.1.1'
+    debugCompile project(':MaterialDesign-debug')
+    releaseCompile project(':MaterialDesign-release')
 }

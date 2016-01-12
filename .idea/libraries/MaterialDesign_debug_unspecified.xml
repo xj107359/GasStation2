@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="MaterialDesign-debug-unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GasStation2/MaterialDesign-debug/unspecified/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GasStation2/MaterialDesign-debug/unspecified/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

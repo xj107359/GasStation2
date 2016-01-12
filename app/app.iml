@@ -68,6 +68,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/classes" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/dependency-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/GasStation2/MaterialDesign-debug/unspecified/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.joanzapata.iconify/android-iconify-fontawesome/2.1.1/jars" />
@@ -99,5 +100,7 @@
     <orderEntry type="library" exported="" name="baidumapapi_base_v3_6_1" level="project" />
     <orderEntry type="library" exported="" name="baidumapapi_util_v3_6_1" level="project" />
     <orderEntry type="library" exported="" name="locSDK_6.13" level="project" />
+    <orderEntry type="module" module-name="MaterialDesign-debug" exported="" />
+    <orderEntry type="library" exported="" name="MaterialDesign-debug-unspecified" level="project" />
   </component>
 </module>

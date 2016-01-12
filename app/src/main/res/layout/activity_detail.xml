@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlyt_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/llyt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:paddingTop="65dp">
+
+        <ImageView
+            android:id="@+id/iv_popup_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/gas0" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:paddingTop="20dp" android:paddingBottom="20dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="气站名称"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_popup_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:maxEms="8"
+                    android:paddingLeft="10dp"
+                    android:singleLine="false"
+                    android:text="文本"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="气站地址"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_popup_addr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:maxEms="8"
+                    android:paddingLeft="10dp"
+                    android:text="地址"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="联系电话"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_popup_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="0512-68220000"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="当日气价"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="3.12元/升"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="总成交量"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="1234笔"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="历史评价"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="4.8分（5分）"
+                    android:textColor="#4D4D4D"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
