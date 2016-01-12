@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_shadow" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ProgressBarCircular">
+        <attr name="progCir_spinSpeed" format="integer"/>
+        <attr name="progCir_rimColor" format="color" />
+        <attr name="progCir_rimWidth" format="dimension"/>
+    </declare-styleable>
+</resources>
