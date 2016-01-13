@@ -55,4 +55,7 @@ dependencies {
     compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.1.1'
     debugCompile project(':MaterialDesign-debug')
     releaseCompile project(':MaterialDesign-release')
+    debugCompile project(':camviewlibrary-debug')
+    releaseCompile project(':camviewlibrary-release')
+    compile 'com.google.zxing:core:3.2.1'
 }

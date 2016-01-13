@@ -1,1 +1,1 @@
-include ':app', ':MaterialDesign-debug', ':MaterialDesign-release'
+include ':app', ':MaterialDesign-debug', ':MaterialDesign-release', ':camviewlibrary-debug', ':camviewlibrary-release'

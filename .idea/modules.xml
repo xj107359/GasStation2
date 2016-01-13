@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/MaterialDesign-debug/MaterialDesign-debug.iml" filepath="$PROJECT_DIR$/MaterialDesign-debug/MaterialDesign-debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaterialDesign-release/MaterialDesign-release.iml" filepath="$PROJECT_DIR$/MaterialDesign-release/MaterialDesign-release.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camviewlibrary-debug/camviewlibrary-debug.iml" filepath="$PROJECT_DIR$/camviewlibrary-debug/camviewlibrary-debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camviewlibrary-release/camviewlibrary-release.iml" filepath="$PROJECT_DIR$/camviewlibrary-release/camviewlibrary-release.iml" />
     </modules>
   </component>
 </project>

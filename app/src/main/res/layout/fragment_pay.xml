@@ -5,9 +5,9 @@
     android:background="@color/material_blue_grey_800"
     tools:context=".PayFragment">
 
-    <TextView
+    <cn.sopho.destiny.camviewlibrary.ScannerLiveView
+        android:id="@+id/camview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/txt_page_incomplete" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

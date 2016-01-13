@@ -122,6 +122,8 @@ public class RecentFragment extends Fragment implements OnGetPoiSearchResultList
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        isFirstLoc = true;
+
         // 显示progressbar
         View rootView = inflater.inflate(R.layout.fragment_recent, container, false);
         progressBar = (LinearLayout) rootView.findViewById(R.id.progress_view_container);
@@ -315,19 +317,19 @@ public class RecentFragment extends Fragment implements OnGetPoiSearchResultList
         }
     }
 
-    @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-        super.setUserVisibleHint(isVisibleToUser);
-        if (isVisibleToUser) {
-            //相当于Fragment的onResume
-            if (mMapView != null)
-                mMapView.onResume();
-        } else {
-            //相当于Fragment的onPause
-            if (mMapView != null)
-                mMapView.onPause();
-        }
-    }
+//    @Override
+//    public void setUserVisibleHint(boolean isVisibleToUser) {
+//        super.setUserVisibleHint(isVisibleToUser);
+//        if (isVisibleToUser) {
+//            //相当于Fragment的onResume
+//            if (mMapView != null)
+//                mMapView.onResume();
+//        } else {
+//            //相当于Fragment的onPause
+//            if (mMapView != null)
+//                mMapView.onPause();
+//        }
+//    }
 
     @Override
     public void onResume() {
