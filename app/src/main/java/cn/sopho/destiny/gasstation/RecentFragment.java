@@ -90,6 +90,7 @@ public class RecentFragment extends Fragment implements OnGetPoiSearchResultList
     private TextView progressText;
     private FloatingActionButton fab;
     private OnFragmentInteractionListener mListener;
+    private int picIndex = 0;
 
     public RecentFragment() {
         // Required empty public constructor
@@ -273,7 +274,22 @@ public class RecentFragment extends Fragment implements OnGetPoiSearchResultList
         } else {
 //            Toast.makeText(Example2Activity.this, result.getName() + ": " + result.getAddress(), Toast.LENGTH_SHORT).show();
 //            showPopup(result.getName(), result.getAddress());
-            DetailActivity detailActivity = new DetailActivity(this.getActivity(), R.mipmap.gas0, result.getName().toString(), result.getAddress().toString());
+            picIndex++;
+            picIndex %= 5;
+            Integer imgSrc;
+            switch (picIndex) {
+                case 0:
+                    imgSrc = R.mipmap.gas0;
+                case 1:
+                    imgSrc = R.mipmap.gas1;
+                case 2:
+                    imgSrc = R.mipmap.gas2;
+                case 3:
+                    imgSrc = R.mipmap.gas3;
+                default:
+                    imgSrc = R.mipmap.gas4;
+            }
+            DetailActivity detailActivity = new DetailActivity(this.getActivity(), imgSrc, result.getName().toString(), result.getAddress().toString());
             detailActivity.show();
         }
     }
