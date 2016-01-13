@@ -10,6 +10,8 @@
     <string name="tab_head_pay">  支  付  </string>
     
     <string name="txt_page_incomplete">功能建设中……</string>
+    <string name="txt_page_no_gas_data">报告尚未提交</string>
+
     <string name="txt_init">初始化中……</string>
     <string name="txt_load_map_init">初始化地图……</string>
     <string name="txt_load_map_locate">正在进行定位……</string>

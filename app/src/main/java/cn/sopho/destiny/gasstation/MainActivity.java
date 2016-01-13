@@ -78,8 +78,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getApplicationContext(), String.format(
-                        getResources().getString(R.string.txt_page_incomplete) ), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.txt_page_incomplete), Toast.LENGTH_SHORT).show();
 
 //                switch (position) {
 //                    case 0:

@@ -2,6 +2,7 @@ package cn.sopho.destiny.gasstation;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatButton;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -10,11 +11,18 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.baidu.mapapi.model.LatLng;
+import com.baidu.mapapi.navi.BaiduMapAppNotSupportNaviException;
+import com.baidu.mapapi.navi.BaiduMapNavigation;
+import com.baidu.mapapi.navi.NaviParaOption;
 
 public class DetailActivity extends android.app.Dialog {
     private Context mContext = null;
     private Integer mImgSrc = 0;
-    private String mTitle = null, mAddr = null;
+    private String mTitle = null;
+    private String mAddr = null;
     private boolean mShowAddr = false;
     private RelativeLayout mRlytBack = null;
     private LinearLayout mLlytContent = null;
@@ -22,8 +30,12 @@ public class DetailActivity extends android.app.Dialog {
     private TextView mTvPopupTitle = null;
     private TextView mTvPopupAddr = null;
     private int mContentPadTop = 65;
+    private LatLng mCurLoc = null;
+    private LatLng mTarLoc = null;
+    private AppCompatButton mBtnGoto = null;
+    private AppCompatButton mBtnReport = null;
 
-    public DetailActivity( ){
+    public DetailActivity() {
         super(null);
     }
 
@@ -36,12 +48,14 @@ public class DetailActivity extends android.app.Dialog {
         mContentPadTop = 65;
     }
 
-    public DetailActivity(Context context, Integer imgSrc, String title, String addr) {
+    public DetailActivity(Context context, LatLng curLoc, LatLng tarLoc, Integer imgSrc, String title, String addr) {
         super(context, android.R.style.Theme_Translucent_NoTitleBar);
         this.mContext = context;
         this.mImgSrc = imgSrc;
         this.mTitle = title;
         this.mAddr = addr;
+        this.mCurLoc = curLoc;
+        this.mTarLoc = tarLoc;
         mShowAddr = true;
         mContentPadTop = 85;
     }
@@ -73,6 +87,31 @@ public class DetailActivity extends android.app.Dialog {
                     dismiss();
                 }
                 return false;
+            }
+        });
+
+        mBtnGoto = (AppCompatButton) findViewById(R.id.btnGoto);
+        mBtnGoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 构建 导航参数
+                NaviParaOption para = new NaviParaOption()
+                        .startPoint(mCurLoc).endPoint(mTarLoc)
+                        .startName("当前位置").endName(mTitle);
+                try {
+                    BaiduMapNavigation.openBaiduMapNavi(para, getContext());
+                } catch (BaiduMapAppNotSupportNaviException e) {
+                    e.printStackTrace();
+                    Toast.makeText(getContext(), e.toString(), Toast.LENGTH_SHORT).show();
+//                    showDialog();
+                }
+            }
+        });
+        mBtnReport = (AppCompatButton) findViewById(R.id.btnReport);
+        mBtnReport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), getContext().getResources().getString(R.string.txt_page_no_gas_data), Toast.LENGTH_SHORT).show();
             }
         });
     }

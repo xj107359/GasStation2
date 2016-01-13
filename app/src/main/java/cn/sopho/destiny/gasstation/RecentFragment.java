@@ -90,7 +90,7 @@ public class RecentFragment extends Fragment implements OnGetPoiSearchResultList
     private TextView progressText;
     private FloatingActionButton fab;
     private OnFragmentInteractionListener mListener;
-    private int picIndex = 0;
+    private static int picIndex = 0;
 
     public RecentFragment() {
         // Required empty public constructor
@@ -280,16 +280,21 @@ public class RecentFragment extends Fragment implements OnGetPoiSearchResultList
             switch (picIndex) {
                 case 0:
                     imgSrc = R.mipmap.gas0;
+                    break;
                 case 1:
                     imgSrc = R.mipmap.gas1;
+                    break;
                 case 2:
                     imgSrc = R.mipmap.gas2;
+                    break;
                 case 3:
                     imgSrc = R.mipmap.gas3;
+                    break;
                 default:
                     imgSrc = R.mipmap.gas4;
+                    break;
             }
-            DetailActivity detailActivity = new DetailActivity(this.getActivity(), imgSrc, result.getName().toString(), result.getAddress().toString());
+            DetailActivity detailActivity = new DetailActivity(this.getActivity(), mCurrentPt, result.getLocation(), imgSrc, result.getName(), result.getAddress());
             detailActivity.show();
         }
     }
