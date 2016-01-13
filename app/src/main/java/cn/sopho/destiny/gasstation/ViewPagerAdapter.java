@@ -30,7 +30,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return DealFragment.newInstance();
 //                return SampleFragment.newInstance(position);
             case 3:
-                return PayFragment.newInstance();
+                return Pay2Fragment.newInstance();
+//            return PayFragment.newInstance();
 //                return SampleFragment.newInstance(position);
 //            case 4:
 //                return SampleFragment.newInstance(position);

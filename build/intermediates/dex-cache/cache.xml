@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\optiplex9020\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar"
+        jar="D:\workspace\android\GasStation2\app\build\intermediates\exploded-aar\GasStation2\qrcodereaderviewlibrary-release\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
-        <dex dex="D:\workspace\android\GasStation2\app\build\intermediates\pre-dexed\release\core-3.2.1_6ca7fea950f9a0d5f4ae37be5c5896236a4861e5.jar" />
-    </item>
-    <item
-        jar="D:\workspace\android\GasStation2\app\build\intermediates\exploded-aar\GasStation2\camviewlibrary-release\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="44fcb2e5bef3100da3df58891deefbe40b1e1362">
-        <dex dex="D:\workspace\android\GasStation2\app\build\intermediates\pre-dexed\release\GasStation2-camviewlibrary-release-unspecified_4d2c55d132e16097c70f7b462c1bcba417500527.jar" />
+        sha1="616e615f154836baf1dbcf0e255547ef72e1f6a8">
+        <dex dex="D:\workspace\android\GasStation2\app\build\intermediates\pre-dexed\release\GasStation2-qrcodereaderviewlibrary-release-unspecified_ecbc5d0678698372a2d014e74e6357f320885008.jar" />
     </item>
 
 </items>

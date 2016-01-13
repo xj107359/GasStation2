@@ -8,7 +8,7 @@
     <string name="tab_head_deal">  优  惠  </string>
     <string name="tab_head_recommend">  推  荐  </string>
     <string name="tab_head_pay">  支  付  </string>
-    
+
     <string name="txt_page_incomplete">功能建设中……</string>
     <string name="txt_page_no_gas_data">报告尚未提交</string>
 
@@ -17,5 +17,8 @@
     <string name="txt_load_map_locate">正在进行定位……</string>
     <string name="txt_load_map_search">查询周边加气站……</string>
     <string name="txt_load_map_search_expand">未找到结果，扩大搜索范围后再次尝试</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
