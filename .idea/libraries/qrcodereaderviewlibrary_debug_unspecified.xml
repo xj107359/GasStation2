@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="qrcodereaderviewlibrary-debug-unspecified">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GasStation2/qrcodereaderviewlibrary-debug/unspecified/res" />
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GasStation2/qrcodereaderviewlibrary-debug/unspecified/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GasStation2/qrcodereaderviewlibrary-debug/unspecified/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
